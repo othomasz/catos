@@ -1,0 +1,561 @@
+<html><head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;family=Poller+One&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* BASE */
+
+body, html {
+	cursor: none;
+	height: 100%;
+	margin: 0;
+	font-family: "Roboto Slab", serif;
+	font-size: 24px;
+	scrollbar-color: #FEFAE0 #23201E;
+	overflow: hidden;
+}
+
+/* TABS */
+
+.header {
+	height: 75px;
+}
+
+.tablink {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 700;
+	font-style: italic;
+	background-color: #23201E;
+	color: #FEFAE0;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: none;
+	padding: 14px 16px;
+	font-size: 25px;
+	width: 16.6667%;
+	height: 75px;
+	transition: 0.2s;
+}
+
+.tablink:hover {
+	background-color: #463D3E;
+}
+
+/* CONTEÚDO */
+
+#Anunaki {background-color: #CCD5AE;}
+#Guizmo {background-color: #E9EDC9;}
+#Miguel {background-color: #FEFAE0;}
+#Teodoro {background-color: #FAEDCD;}
+#Virgulino {background-color: #D4A373; color: #FEFAE0;}
+#Salem {background-color: #C78266; color: #FEFAE0;}
+
+.tabcontent {
+	color: #23201E;
+	display: none;
+	height: 100%;
+}
+
+.main {
+	padding: 20px 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	animation: fadeEffect 0.2s;
+}
+
+
+@keyframes fadeEffect {
+	from {opacity: 0.8; scale: 0.99; margin-top: 5px;}
+	to {opacity: 1; scale: 1.0; margin-top: 0;}
+}
+a:link {
+cursor: none;
+  text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+	text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	padding: 0px 40px;
+	height: 75px;
+}
+
+/* CARTA */
+
+.card {
+	border-radius: 30px;
+	width: 1080px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.title {
+	font-size: 89px;
+	font-family: "Poller One", sans-serif;
+	font-weight: 400;
+	margin-top: -5px;
+	margin-bottom: -25px;
+}
+
+.img {
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+p {
+	margin-top: -10px;
+	margin-bottom: 0px;
+}
+
+.others{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.mcard{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
+.info{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-direction: column;
+	
+}
+
+/* Shapes */
+
+.star1 {
+	width: 150px;	
+	aspect-ratio: 1;
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(0.07, 0.87, 0.55, 1.37);
+	clip-path: shape(from 48.18% 1.07%,curve by 3.65% 0% with 0.81% -1.42%/2.84% -1.42%,line by 7.4% 12.99%,arc by 2.79% 0.83% of 2.1% 2.13% small ccw,line by 13.18% -6.89%,curve by 3.07% 1.99% with 1.44% -0.75%/3.15% 0.35%,line by -0.73% 14.97%,arc by 1.91% 2.22% of 2.1% 2.13% small ccw,line by 14.77% 1.4%,curve by 1.52% 3.35% with 1.62% 0.15%/2.46% 2.02%,line by -8.63% 12.19%,arc by 0.41% 2.91% of 2.1% 2.13% small ccw,line by 11.68% 9.24%,curve by -0.52% 3.65% with 1.28% 1.01%/0.99% 3.04%,line by -13.79% 5.55%,arc by -1.21% 2.67% of 2.1% 2.13% small ccw,line by 4.88% 14.15%,curve by -2.39% 2.78% with 0.53% 1.55%/-0.8% 3.1%,line by -14.57% -2.86%,arc by -2.45% 1.59% of 2.1% 2.13% small ccw,line by -3.47% 14.57%,curve by -3.5% 1.04% with -0.38% 1.59%/-2.33% 2.17%,line by -10.72% -10.36%,arc by -2.91% 0% of 2.1% 2.12% small ccw,line to 37.82% 99.41%,curve by -3.5% -1.04% with -1.17% 1.13%/-3.12% 0.56%,line by -3.48% -14.57%,arc by -2.45% -1.59% of 2.1% 2.13% small ccw,line by -14.57% 2.86%,curve by -2.39% -2.78% with -1.59% 0.31%/-2.92% -1.24%,line by 4.88% -14.15%,arc by -1.21% -2.67% of 2.1% 2.13% small ccw,line to 1.33% 59.92%,curve by -0.52% -3.65% with -1.51% -0.61%/-1.8% -2.64%,line to 12.49% 47.03%,arc by 0.41% -2.91% of 2.1% 2.13% small ccw,line to 4.27% 31.92%,curve by 1.52% -3.35% with -0.94% -1.33%/-0.1% -3.2%,line by 14.77% -1.4%,arc by 1.91% -2.22% of 2.1% 2.13% small ccw,line by -0.73% -14.97%,curve by 3.07% -1.99% with -0.08% -1.64%/1.63% -2.74%,line by 13.18% 6.89%,arc by 2.79% -0.83% of 2.1% 2.13% small ccw,line to 48.18% 1.07%,close);
+}
+
+.star2 {
+	width: 150px;	
+	aspect-ratio: 1;
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(0.07, 0.87, 0.55, 1.37);
+	clip-path: shape(from 45.95% 1.31%,arc by 8.09% 0% of 6.88% 6.88% small cw,line by 11.05% 8.03%,arc by 2.97% 1.23% of 6.88% 6.88% small ccw,line by 13.5% 2.14%,arc by 5.72% 5.72% of 6.88% 6.88% small cw,line by 2.14% 13.5%,arc by 1.23% 2.97% of 6.88% 6.88% small ccw,line by 8.03% 11.05%,arc by 0% 8.09% of 6.88% 6.88% small cw,line by -8.03% 11.05%,arc by -1.23% 2.97% of 6.88% 6.88% small ccw,line by -2.14% 13.5%,arc by -5.72% 5.72% of 6.88% 6.88% small cw,line by -13.5% 2.14%,arc by -2.97% 1.23% of 6.88% 6.88% small ccw,line by -11.05% 8.03%,arc by -8.09% 0% of 6.88% 6.88% small cw,line by -11.05% -8.03%,arc by -2.97% -1.23% of 6.88% 6.88% small ccw,line by -13.5% -2.14%,arc by -5.72% -5.72% of 6.88% 6.88% small cw,line to 10.58% 68.07%,arc by -1.23% -2.97% of 6.88% 6.88% small ccw,line to 1.31% 54.05%,arc by 0% -8.09% of 6.88% 6.88% small cw,line by 8.03% -11.05%,arc by 1.23% -2.97% of 6.88% 6.88% small ccw,line by 2.14% -13.5%,arc by 5.72% -5.72% of 6.88% 6.88% small cw,line by 13.5% -2.14%,arc by 2.97% -1.23% of 6.88% 6.88% small ccw,line to 45.95% 1.31%,close);
+}
+
+.star3 {
+	width: 150px;	
+	aspect-ratio: 1;
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(0.07, 0.87, 0.55, 1.37);
+	clip-path: shape(from 44.89% 1.3%,arc by 10.23% 0% of 10.51% 10.3% small cw,line by 2.85% 1.55%,arc by 5.74% 1.28% of 10.51% 10.3% small ccw,line by 3.25% -0.19%,arc by 9.21% 4.35% of 10.51% 10.3% small cw,line by 1.88% 2.61%,arc by 4.6% 3.6% of 10.51% 10.3% small ccw,line by 3.01% 1.21%,arc by 6.38% 7.84% of 10.51% 10.3% small cw,line by 0.53% 3.15%,arc by 2.55% 5.2% of 10.51% 10.3% small ccw,line by 2.18% 2.37%,arc by 2.28% 9.77% of 10.51% 10.3% small cw,line by -0.91% 3.07%,curve by 0% 5.77% with -0.56% 1.88%/-0.56% 3.89%,line by 0.91% 3.07%,arc by -2.28% 9.77% of 10.51% 10.3% small cw,line by -2.18% 2.37%,arc by -2.55% 5.2% of 10.51% 10.3% small ccw,line by -0.53% 3.15%,arc by -6.38% 7.84% of 10.51% 10.3% small cw,line by -3.01% 1.21%,arc by -4.6% 3.6% of 10.51% 10.3% small ccw,line by -1.88% 2.61%,arc by -9.21% 4.35% of 10.51% 10.3% small cw,line by -3.25% -0.19%,arc by -5.74% 1.28% of 10.51% 10.3% small ccw,line by -2.85% 1.55%,arc by -10.23% 0% of 10.51% 10.3% small cw,line by -2.85% -1.55%,arc by -5.74% -1.28% of 10.51% 10.3% small ccw,line by -3.25% 0.19%,arc by -9.21% -4.35% of 10.51% 10.3% small cw,line by -1.88% -2.61%,arc by -4.6% -3.6% of 10.51% 10.3% small ccw,line by -3.01% -1.21%,arc by -6.38% -7.84% of 10.51% 10.3% small cw,line by -0.53% -3.15%,arc by -2.55% -5.2% of 10.51% 10.3% small ccw,line to 2.7% 65.72%,arc to 0.42% 55.95% of 10.51% 10.3% small cw,line by 0.91% -3.07%,arc by 0% -5.77% of 10.51% 10.3% small ccw,line to 0.42% 44.05%,arc to 2.7% 34.28% of 10.51% 10.3% small cw,line by 2.18% -2.37%,arc by 2.55% -5.2% of 10.51% 10.3% small ccw,line by 0.53% -3.15%,arc by 6.38% -7.84% of 10.51% 10.3% small cw,line by 3.01% -1.21%,arc by 4.6% -3.6% of 10.51% 10.3% small ccw,line by 1.88% -2.61%,arc to 33.05% 3.95% of 10.51% 10.3% small cw,line by 3.25% 0.19%,arc by 5.74% -1.28% of 10.51% 10.3% small ccw,line by 2.85% -1.55%,close);
+}
+
+.star3:hover {
+	transform: rotate(2deg) scaleY(1.06) ;
+}
+.star2:hover {
+	transform: rotate(-1deg) scaleX(1.06) ;
+}
+.star1:hover {
+	transform: rotate(-2deg) scaleY(1.06) ;
+}
+.circle {
+  border-radius: 100%;
+	position: fixed;
+	background-color: #23201E;
+	width: 50px;	
+	aspect-ratio: 1;
+	pointer-events: none;
+	top: -25;
+	left: -25;
+	clip-path: shape(from 48.18% 1.07%,curve by 3.65% 0% with 0.81% -1.42%/2.84% -1.42%,line by 7.4% 12.99%,arc by 2.79% 0.83% of 2.1% 2.13% small ccw,line by 13.18% -6.89%,curve by 3.07% 1.99% with 1.44% -0.75%/3.15% 0.35%,line by -0.73% 14.97%,arc by 1.91% 2.22% of 2.1% 2.13% small ccw,line by 14.77% 1.4%,curve by 1.52% 3.35% with 1.62% 0.15%/2.46% 2.02%,line by -8.63% 12.19%,arc by 0.41% 2.91% of 2.1% 2.13% small ccw,line by 11.68% 9.24%,curve by -0.52% 3.65% with 1.28% 1.01%/0.99% 3.04%,line by -13.79% 5.55%,arc by -1.21% 2.67% of 2.1% 2.13% small ccw,line by 4.88% 14.15%,curve by -2.39% 2.78% with 0.53% 1.55%/-0.8% 3.1%,line by -14.57% -2.86%,arc by -2.45% 1.59% of 2.1% 2.13% small ccw,line by -3.47% 14.57%,curve by -3.5% 1.04% with -0.38% 1.59%/-2.33% 2.17%,line by -10.72% -10.36%,arc by -2.91% 0% of 2.1% 2.12% small ccw,line to 37.82% 99.41%,curve by -3.5% -1.04% with -1.17% 1.13%/-3.12% 0.56%,line by -3.48% -14.57%,arc by -2.45% -1.59% of 2.1% 2.13% small ccw,line by -14.57% 2.86%,curve by -2.39% -2.78% with -1.59% 0.31%/-2.92% -1.24%,line by 4.88% -14.15%,arc by -1.21% -2.67% of 2.1% 2.13% small ccw,line to 1.33% 59.92%,curve by -0.52% -3.65% with -1.51% -0.61%/-1.8% -2.64%,line to 12.49% 47.03%,arc by 0.41% -2.91% of 2.1% 2.13% small ccw,line to 4.27% 31.92%,curve by 1.52% -3.35% with -0.94% -1.33%/-0.1% -3.2%,line by 14.77% -1.4%,arc by 1.91% -2.22% of 2.1% 2.13% small ccw,line by -0.73% -14.97%,curve by 3.07% -1.99% with -0.08% -1.64%/1.63% -2.74%,line by 13.18% 6.89%,arc by 2.79% -0.83% of 2.1% 2.13% small ccw,line to 48.18% 1.07%,close);
+}
+.circle.hover {
+  clip-path: none;
+  border-radius: 100%;
+}
+
+
+/* Butão */
+
+.btnmiado {
+	border-width: 0px;
+	background-size: cover;
+	cursor: none;
+}
+
+.svgIcon {
+  fill: #FAEDCD;
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.07, 0.87, 0.55, 1.37);
+}
+
+.btnmiado:hover .svgIcon {
+  fill: #FEFAE0;
+  transform: rotate(1deg) scaleX(0.94) translateY(-4px);
+}
+
+.btnmiado:active .svgIcon {
+    fill: #FAEDCD;
+    transform: rotate(1deg) scaleX(1.1) scaleY(0.9) translateY(1px);
+}
+
+@media (max-width: 768px) {
+
+  /* Cursor não faz sentido no mobile */
+  body, html {
+    cursor: auto;
+    overflow-y: auto;
+    font-size: 20px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  /* Header vira scroll horizontal */
+  .header {
+    display: flex;
+    overflow-x: auto;
+    height: auto;
+    scrollbar-width: none;
+  }
+
+  .header::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tablink {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 140px;
+    font-size: 18px;
+    height: 60px;
+  }
+
+  /* Conteúdo */
+  .main {
+    padding: 16px;
+  }
+
+  /* Card vira coluna */
+  .card {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  /* Título */
+  .title {
+    font-size: 72px;
+    margin-bottom: -10px;
+  }
+
+  hr {
+    width: 100% !important;
+  }
+
+  /* Imagem principal */
+  .img {
+    height: 240px;
+  }
+
+  /* Stars */
+  .star1,
+  .star2,
+  .star3 {
+    width: 112px;
+  }
+
+  /* Outros itens */
+  .others {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+
+  /* Botão do miado */
+  .svgIcon {
+    height: 4em;
+  }
+
+  /* Links */
+  .link {
+    height: auto;
+    padding: 12px 16px;
+  }
+}
+
+</style>
+</head>
+<body ontouchstart="">
+
+	<div class="header">
+		<button class="tablink" onclick="changeTab('Anunaki', this, '#CCD5AE', '#23201E')">Anunaki</button>
+		<button class="tablink" onclick="changeTab('Guizmo', this, '#E9EDC9', '#23201E')">Guizmo</button>
+		<button class="tablink" onclick="changeTab('Miguel', this, '#FEFAE0', '#23201E')" id="defaultOpen" style="background-color: rgb(254, 250, 224); color: rgb(35, 32, 30);">Miguel Rufino</button>
+		<button class="tablink" onclick="changeTab('Teodoro', this, '#FAEDCD', '#23201E')">Teodoro</button>
+		<button class="tablink" onclick="changeTab('Virgulino', this, '#D4A373', '#FEFAE0')">Virgulino</button>
+		<button class="tablink" onclick="changeTab('Salem', this, '#C78266', '#FEFAE0')">Salem</button>
+	</div>
+	
+	<div id="Miguel" class="tabcontent" style="display: block;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
+		<div class="main">
+
+			<div class="card" style="background-color: #FAEDCD;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title">MIGUEL</h1>
+						<hr style="height:2px; border-width:0px; background-color:#23201E; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/M_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/M_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Miguel.mp3')">
+							<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/M_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/M_Card.jpg')"></div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="Anunaki" class="tabcontent" style="display: none;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
+		<div class="main">
+			<div class="Photo-Gallery">
+				<p>oi</p> 
+			</div>
+		
+			<div class="card">
+				<h3>Anunaki</h3>
+				<p>Ja quebrou um copo</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Guizmo" class="tabcontent" style="display: none;">
+		<div class="link"> <a>/home</a> </div>
+		<div class="main">
+			<div class="Photo-Gallery">
+				<p>oi</p> 
+			</div>
+		
+			<div class="card">
+				<h3>Anunaki</h3>
+				<p>Ja quebrou um copo</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Teodoro" class="tabcontent" style="display: none;">
+		<div class="link"> <a>/home</a> </div>
+		<div class="main">
+			<div class="Photo-Gallery">
+				<p>oi</p> 
+			</div>
+		
+			<div class="card">
+				<h3>Anunaki</h3>
+				<p>Ja quebrou um copo</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Virgulino" class="tabcontent" style="display: none;">
+		<div class="link"> <a>/home</a> </div>
+		<div class="main">
+			<div class="Photo-Gallery">
+				<p>oi</p> 
+			</div>
+		
+			<div class="card">
+				<h3>Anunaki</h3>
+				<p>Ja quebrou um copo</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Salem" class="tabcontent" style="display: none;">
+		<div class="link"> <a>/home</a> </div>
+		<div class="main">
+			<div class="Photo-Gallery">
+				<p>oi</p> 
+			</div>
+		
+			<div class="card">
+				<h3>Anunaki</h3>
+				<p>Ja quebrou um copo</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="circle"></div>
+
+<script>
+
+// Cursor
+
+// Select the circle element
+const circleElement = document.querySelector('.circle');
+
+// Create objects to track mouse position and custom cursor position
+const mouse = { x: 0, y: 0 }; // Track current mouse position
+const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
+const circle = { x: 0, y: 0 }; // Track the circle position
+
+// Initialize variables to track scaling and rotation
+let currentScale = 0; // Track current scale value
+let currentAngle = 0; // Track current angle value
+
+// Update mouse position on the 'mousemove' event
+window.addEventListener('mousemove', (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
+// Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
+const speed = 0.5;
+
+// Start animation
+const tick = () => {
+  // MOVE
+  // Calculate circle movement based on mouse position and smoothing
+  circle.x += (mouse.x - circle.x) * speed;
+  circle.y += (mouse.y - circle.y) * speed;
+  // Create a transformation string for cursor translation
+  const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+
+  // SQUEEZE
+  // 1. Calculate the change in mouse position (deltaMouse)
+  const deltaMouseX = mouse.x - previousMouse.x;
+  const deltaMouseY = mouse.y - previousMouse.y;
+  // Update previous mouse position for the next frame
+  previousMouse.x = mouse.x;
+  previousMouse.y = mouse.y;
+  // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
+  const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
+  // 3. Convert mouse velocity to a value in the range [0, 0.5]
+  const scaleValue = (mouseVelocity / 150) * 0.5;
+  // 4. Smoothly update the current scale
+  currentScale += (scaleValue - currentScale) * speed;
+  // 5. Create a transformation string for scaling
+  const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+
+  // ROTATE
+  // 1. Calculate the angle using the atan2 function
+  const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+  // 2. Check for a threshold to reduce shakiness at low mouse velocity
+  if (mouseVelocity > 20) {
+    currentAngle = angle;
+  }
+  // 3. Create a transformation string for rotation
+  const rotateTransform = `rotate(${currentAngle}deg)`;
+
+  // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
+  circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+
+  // Request the next frame to continue the animation
+  window.requestAnimationFrame(tick);
+}
+
+// Start the animation loop
+tick();
+
+const cursor = document.querySelector(".circle");
+
+document.querySelectorAll("button").forEach(btn => {
+
+  btn.addEventListener("mouseenter", () => {
+    cursor.classList.add("hover");
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+
+});
+
+
+// Tabs
+
+function changeTab(tabName, element, color, color2) {
+	currentScale = 0.5;
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	
+		tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].style.backgroundColor = "";
+		tablinks[i].style.color = "";
+	}
+	
+	document.getElementById(tabName).style.display = "block";
+	
+	element.style.backgroundColor = color;
+	element.style.color = color2;
+	}
+	
+ document.getElementById("defaultOpen").click();
+ 
+ 
+
+// Sounds
+ 
+const sounds = {
+  "audios/Miguel.mp3": new Audio("audios/Miguel.mp3"),
+  // adicione os outros aqui depois
+};
+
+// força o preload
+Object.values(sounds).forEach(audio => audio.load());
+ 
+ 
+function playSound(src) {
+  const audio = sounds[src];
+  if (!audio) return;
+
+  audio.currentTime = 0;
+  audio.play();
+}
+
+</script>
+
+</body></html>
