@@ -210,7 +210,6 @@ p {
 }
 
 .svgIcon {
-  fill: #FAEDCD;
   transition: 0.2s;
   transition-timing-function: cubic-bezier(0.07, 0.87, 0.55, 1.37);
 }
@@ -224,6 +223,10 @@ p {
     fill: #FAEDCD;
     transform: rotate(1deg) scaleX(1.1) scaleY(0.9) translateY(1px);
 }
+.btnmiado:active {
+	transform: rotate(-1.4deg) scaleX(1.1) scaleY(0.97);
+}
+
 
 @media (max-width: 768px) {
 
@@ -339,7 +342,7 @@ p {
 					<div class="others"> 
 						<div class="mcard"><img class="star1" src="images/M_olho.jpg"><p>olhos</p></div>
 						<div class="mcard"><button style= "background-image: url('images/M_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Miguel.mp3')">
-							<svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+							<svg class="svgIcon" style="fill: #FAEDCD;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
 <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
   <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
 </svg>
@@ -354,73 +357,148 @@ p {
 		</div>
 	</div>
 	
-	<div id="Anunaki" class="tabcontent" style="display: none;">
+	<div id="Anunaki" class="tabcontent" style="display: block;">
 		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
 		<div class="main">
-			<div class="Photo-Gallery">
-				<p>oi</p> 
+
+			<div class="card" style="background-color: #B1C39E;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title">ANUNAKI</h1>
+						<hr style="height:2px; border-width:0px; background-color:#23201E; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/A_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/A_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Anunaki.mp3')">
+							<svg class="svgIcon" style="fill: #B1C39E;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/A_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/A_Card.jpg')"></div>
 			</div>
-		
-			<div class="card">
-				<h3>Anunaki</h3>
-				<p>Ja quebrou um copo</p>
-			</div>
+			
 		</div>
 	</div>
 	
-	<div id="Guizmo" class="tabcontent" style="display: none;">
-		<div class="link"> <a>/home</a> </div>
+	<div id="Guizmo" class="tabcontent" style="display: block;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
 		<div class="main">
-			<div class="Photo-Gallery">
-				<p>oi</p> 
+
+			<div class="card" style="background-color: #cdd5b0;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title">GUIZMO</h1>
+						<hr style="height:2px; border-width:0px; background-color:#23201E; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/G_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/G_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Guizmo.mp3')">
+							<svg class="svgIcon" style="fill: #cdd5b0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/G_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/G_Card.jpg')"></div>
 			</div>
-		
-			<div class="card">
-				<h3>Anunaki</h3>
-				<p>Ja quebrou um copo</p>
-			</div>
+			
 		</div>
 	</div>
-	
-	<div id="Teodoro" class="tabcontent" style="display: none;">
-		<div class="link"> <a>/home</a> </div>
+
+	<div id="Teodoro" class="tabcontent" style="display: block;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
 		<div class="main">
-			<div class="Photo-Gallery">
-				<p>oi</p> 
+
+			<div class="card" style="background-color: #F5DCB6;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title">TEODORO</h1>
+						<hr style="height:2px; border-width:0px; background-color:#23201E; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/T_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/T_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Teodoro.mp3')">
+							<svg class="svgIcon" style="fill: #F5DCB6;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/T_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/T_Card.jpg')"></div>
 			</div>
-		
-			<div class="card">
-				<h3>Anunaki</h3>
-				<p>Ja quebrou um copo</p>
-			</div>
+			
 		</div>
 	</div>
-	
-	<div id="Virgulino" class="tabcontent" style="display: none;">
-		<div class="link"> <a>/home</a> </div>
+
+	<div id="Virgulino" class="tabcontent" style="display: block;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
 		<div class="main">
-			<div class="Photo-Gallery">
-				<p>oi</p> 
+
+			<div class="card" style="background-color: #AC7355;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title" style="font-size: 80px;" >VIRGULINO</h1>
+						<hr style="height:2px; border-width:0px; background-color:#FEFAE0; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/V_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/V_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Virgulino.mp3')">
+							<svg class="svgIcon" style="fill: #AC7355;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/V_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/V_Card.jpg')"></div>
 			</div>
-		
-			<div class="card">
-				<h3>Anunaki</h3>
-				<p>Ja quebrou um copo</p>
-			</div>
+			
 		</div>
 	</div>
-	
-	<div id="Salem" class="tabcontent" style="display: none;">
-		<div class="link"> <a>/home</a> </div>
+
+	<div id="Salem" class="tabcontent" style="display: block;">
+		<div class="link"> <a href="https://othomasz.github.io">/home</a> </div>
 		<div class="main">
-			<div class="Photo-Gallery">
-				<p>oi</p> 
+
+			<div class="card" style="background-color: #A26051;">
+				<div class="info">
+					<div class= "title/text">
+						<h1 class="title">SALEM</h1>
+						<hr style="height:2px; border-width:0px; background-color:#FEFAE0; width:550px;">
+						<p> já quebrou um copo</p>
+					</div>
+					<div class="others"> 
+						<div class="mcard"><img class="star1" src="images/S_olho.jpg"><p>olhos</p></div>
+						<div class="mcard"><button style= "background-image: url('images/S_miado.jpg');" class="star2 btnmiado" onclick="playSound('audios/Salem.mp3')">
+							<svg class="svgIcon" style="fill: #A26051;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="6em" >
+<!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <path d="M187.2 100.9c-12.4-6.8-27.4-6.5-39.6.7-12.2 7.2-19.6 20.3-19.6 34.4v368c0 14.1 7.5 27.2 19.6 34.4 12.1 7.2 27.2 7.5 39.6.7l336-184c12.8-7 20.8-20.5 20.8-35.1 0-14.6-8-28.1-20.8-35.1l-336-184z"/>
+</svg>
+							</button><p>miado</p></div>
+						<div class="mcard"><img class="star3" src="images/S_pata.jpg"><p>patinha</p></div>
+					</div>
+					<p>"miau"</p>
+				</div>
+				<div class="img" style="background-image: url('images/S_Card.jpg')"></div>
 			</div>
-		
-			<div class="card">
-				<h3>Anunaki</h3>
-				<p>Ja quebrou um copo</p>
-			</div>
+			
 		</div>
 	</div>
 	
@@ -541,6 +619,11 @@ function changeTab(tabName, element, color, color2) {
  
 const sounds = {
   "audios/Miguel.mp3": new Audio("audios/Miguel.mp3"),
+  "audios/Anunaki.mp3": new Audio("audios/Anunaki.mp3"),
+  "audios/Guizmo.mp3": new Audio("audios/Guizmo.mp3"),
+  "audios/Teodoro.mp3": new Audio("audios/Teodoro.mp3"),
+  "audios/Virgulino.mp3": new Audio("audios/Virgulino.mp3"),
+  "audios/Salem.mp3": new Audio("audios/Salem.mp3"),
   // adicione os outros aqui depois
 };
 
